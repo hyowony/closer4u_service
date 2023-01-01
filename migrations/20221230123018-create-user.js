@@ -34,6 +34,10 @@ module.exports = {
       point: {
         type: Sequelize.INTEGER,
       },
+      member: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
@@ -48,3 +52,4 @@ module.exports = {
     await queryInterface.dropTable('Users');
   },
 };
+
